@@ -45,6 +45,10 @@ footer ul li {
   list-style: none;
 }
 
+div {
+  -webkit-animation: slider 10s ease-in-out infinite;
+}
+
 /* Classes */
 
 .container {
@@ -60,12 +64,8 @@ footer ul li {
   position: relative;
 }
 
-.photo {
-
-  }
-
 .grow {
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 /* Psuedo Classes */
@@ -74,58 +74,72 @@ a.selected, a:hover {
   color: #ffccff;
 }
 
+.photo {
+  position: absolute;
+  width: 980px;
+  height: 675px;
+}
+
 .grow:hover {
   transform: scale(1.1);
 }
 
-/* Media */
+/* Animations */
 
-@keyframes cf4FadeInOut {
-  0% {
-    opacity:1;
+@-webkit-keyframes slider {
+  2% {
+    opacity: 0;
   }
   17% {
-    opacity:1;
+    opacity: 1;
   }
   25% {
-    opacity:0;
+    opacity: 0;
   }
   40% {
-    opacity:0;
+    opacity: 0;
   }
   55% {
-    opacity:1;
+    opacity: 1;
   }
   75% {
-    opacity:1;
+    opacity: 1;
   }
   100% {
     opacity: 0;
   }
 }
 
-.container img:nth-of-type(1) {
+div img:nth-of-type(1) {
   animation-delay: 24s;
 }
-.container img:nth-of-type(2) {
+div img:nth-of-type(2) {
   animation-delay: 20s;
 }
-.container img:nth-of-type(3) {
+div img:nth-of-type(3) {
   animation-delay: 16s;
 }
-.container img:nth-of-type(4) {
+div img:nth-of-type(4) {
   animation-delay: 12;
 }
-.container img:nth-of-type(5) {
+div img:nth-of-type(5) {
   animation-delay: 8s;
 }
-.container img:nth-of-type(6) {
+div img:nth-of-type(6) {
   animation-delay: 4s;
 }
-.container img:nth-of-type(7) {
+div img:nth-of-type(7) {
   animation-delay: 0s;
 }
 
+/* Responsive Design */
+
+@media screen and (max-width: 480px) {
+    .container {
+      float: left;
+      width: 100%;
+    }
+  }
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;

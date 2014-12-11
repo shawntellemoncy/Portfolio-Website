@@ -72,9 +72,13 @@ a.selected, a:hover {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (min-width: 480px) {
-	
-}
+@media screen and (max-width: 480px) {
+		.container {
+			float: left;
+			width: 100%;
+		}
+	}
+
 
 /* Show Grid */
 .showgrid {

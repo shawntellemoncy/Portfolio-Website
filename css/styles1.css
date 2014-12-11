@@ -114,6 +114,15 @@ a.selected, a:hover {
 	transform: scale(1.1);
 }
 
+/* Responsive Design */
+
+@media screen and (max-width: 480px) {
+		.container {
+			float: left;
+			width: 100%;
+		}
+	}
+
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;

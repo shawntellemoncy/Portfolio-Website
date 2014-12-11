@@ -129,6 +129,15 @@ a.selected, a:hover {
 	background-image: url(http://www.transparenttextures.com/patterns/brick-wall-dark.png);
 }
 
+/* Responsive Design */
+
+@media screen and (max-width: 480px) {
+		.container {
+			float: left;
+			width: 100%;
+		}
+	}
+
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
