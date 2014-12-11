@@ -1,0 +1,120 @@
+/* Type Selectors */
+
+html { 
+  background: url('../img/Vintage-Heart.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+	background: rgba(254,242,253,0.9);
+	max-width: 100%;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+	border-bottom: solid;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+	color: purple;
+	border-bottom: solid;
+	margin: 20px;
+}
+
+h4 {
+	margin: 20px;
+}
+
+p {
+	max-width: 75%;
+	margin: 20px;
+}
+
+aside {
+	font-family: 'Handlee', cursive;
+	font-size: 1.40em;
+	padding: 50px 50px;
+	margin-left: 40px;
+}
+
+aside p {
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	font-size: 1.25em;
+	padding-right: 40px;
+}
+
+a {
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+
+div {
+	margin-top: -60px;	x 
+}
+
+/* FOOTER */
+
+footer p {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+footer ul li {
+	font-size: 0.9em;
+	text-align: left;
+	list-style: none;
+}
+
+/* Class Selectors */ 
+
+.image {
+	width: 50%;
+	border-radius: 10%;
+	margin: auto;
+	display: block;
+	margin-top: 30px;
+	border: solid;
+}
+
+.year {
+	background: purple;
+	color: #ccffff;
+	text-align: center;
+	float: right;
+	margin-top: -37px;
+	width: 120px;
+}
+
+.container {
+	background-color: #ccffff;
+}
+
+.grow {
+	transition: all .2s ease-in-out;
+}
+
+/* Psuedo Classes */
+
+a.selected, a:hover {
+	color: #ffccff;
+}
+
+.grow:hover {
+	transform: scale(1.1);
+}
+
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
+}

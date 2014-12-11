@@ -1,0 +1,132 @@
+/* Type Selectors */
+
+body {
+  background-color: black;
+  display: block;
+  margin: 8px;
+}
+
+header {
+  background: rgba(254,242,253,0.9);
+	color: black;
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+  max-width: 100%;
+  border-bottom: solid;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.25em;
+  padding-right: 40px;
+  }
+
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+footer a{
+  font-size: 0.9em;
+  clear: both;
+  color: cornflowerblue;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8em;
+  color: cornflowerblue;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+/* Classes */
+
+.container {
+  margin: 50px auto;
+  width: 980px;
+  height: 675px;
+  overflow: hidden;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative;
+}
+
+.photo {
+
+  }
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+/* Psuedo Classes */
+
+a.selected, a:hover {
+  color: #ffccff;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+/* Media */
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  40% {
+    opacity:0;
+  }
+  55% {
+    opacity:1;
+  }
+  75% {
+    opacity:1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container img:nth-of-type(1) {
+  animation-delay: 24s;
+}
+.container img:nth-of-type(2) {
+  animation-delay: 20s;
+}
+.container img:nth-of-type(3) {
+  animation-delay: 16s;
+}
+.container img:nth-of-type(4) {
+  animation-delay: 12;
+}
+.container img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+.container img:nth-of-type(6) {
+  animation-delay: 4s;
+}
+.container img:nth-of-type(7) {
+  animation-delay: 0s;
+}
+
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
+}
