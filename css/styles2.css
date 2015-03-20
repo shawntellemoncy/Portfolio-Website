@@ -9,11 +9,12 @@ header {
 
 header h2 {
 	font-family: 'Bad Script', cursive;
+	color: black;
 }
 
 h1 {
 	font-family: 'Bad Script', cursive;
-	color: #330099;
+	color: black;
 }
 
 h2 {
@@ -53,10 +54,14 @@ nav li {
 
 nav a {
 	text-decoration: none; 
+	list-style: none;
+	color: black;
 }
 
 img {
 	float: right;
+	width: 175px;
+	height: 100px;
 }
 
 section {
